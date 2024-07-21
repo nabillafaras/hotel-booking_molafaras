@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f2f5;
+        }
+
+        .login-box {
+            width: 90%;
+            max-width: 1200px;
+            height: 90%;
+            max-height: 800px;
+            display: flex;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .left {
+            background: #2c3e50;
+            color: #fff;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .right {
+            background: #ecf0f1;
+            color: #333;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .logo img {
+            margin-bottom: 20px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            max-width: 400px;
+            align-items: center;
+        }
+
+        form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .forgot-password {
+            align-self: flex-end;
+            margin-right: 10%;
+            margin-bottom: 20px;
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background: #2c3e50;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .or-login {
+            margin: 20px 0;
+        }
+
+        .social-login {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+        }
+
+        .social-login button {
+            width: 45%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .social-login .google {
+            background: #dd4b39;
+            color: #fff;
+        }
+
+        .social-login .facebook {
+            background: #3b5998;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <div class="left">
+                <img src="image/bg.jpg" alt="Background" style="width: 600px; height: auto;">
+            </div>
+            <div class="right">
+                <div class="logo">
+                    <img src="image/logo1.png" alt="Logo" style="width: 250px; height: auto;">
+                    <h1>LOGIN</h1>
+                </div>
+                <form id="loginForm" action="login.php" method="POST">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <button type="submit" name="login" class="btn-input">Login</button>
+                </form>
+                
+                <p>Belum punya akun?
+                    <a href="register.html">Register disini</a>
+                </p>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
